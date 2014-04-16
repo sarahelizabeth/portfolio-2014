@@ -1,0 +1,42 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    {# Brand and toggle get grouped for better mobile display #}
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./">{{ title }}</a></li>
+    </div>
+
+    {# Collect the nav links, forms, and other content for toggling #}
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul id='target_nav' class="social-menu nav navbar-nav navbar-right">
+          <li>
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=100007656008523">
+                  <i class="icon-facebook-sign"></i> <span class="hidden">Facebook</span>
+              </a>
+          </li>
+          <li>
+              <a target="_blank" href="https://twitter.com/ethicaleatables">
+                  <i class="icon-twitter-sign"></i> <span class="hidden">Twitter</span>
+              </a>
+          </li>
+          <li>
+              <a target="_blank" href="https://www.linkedin.com/profile/view?id=328231248">
+                  <i class="icon-linkedin-sign"></i> <span class="hidden">LinkedIn</span>
+              </a>
+          </li>
+          <li>
+      </ul>
+      <ul id='source' class="nav navbar-nav navbar-right">
+        <li id='nabout' {% if PATH=="/#about" %} class="active" {% endif %}><a href="#about">About</a></li>
+        <li id='nwork' {% if PATH=="#work" %} class="active" {% endif %}><a href="#work">work</a></li>
+        <li id='nskills' {% if PATH=="#skills" %} class="active" {% endif %}><a href="#skills">Skills</a></li>
+        <li id='ncontact' {% if PATH=="#contact" %} class="active" {% endif %}><a href="#contact">Contact</a></li>
+      </ul>
+    </div>{# /.navbar-collapse #}
+  </div>
+</nav>

@@ -1,0 +1,141 @@
+{% extends "_portfolio.html" %}
+
+{% block content %}
+
+<div class='featured-image responsive' style='margin-top: -50px;'>
+  <img class='img-responsive' src='img/Cosmos03.jpg' />
+  <div class='index container'>
+    <h1 id='cursive'>Out of this world web design and storytelling by</h1>
+    <h1 id='fillHeader'>{{ headline }}</h1>
+    <h3 id='cursive'>Click to enter</h3>
+  </div>
+</div>
+
+<div id='content' data-spy="scroll" data-target="#target_nav">
+  <div id='about' class='container'>
+    <div class='col-md-8 col-md-offset-2'>
+      <div class='head'>
+        <span id='line'></span><h2 id='header'>About Me</h2><span id='line'></span>
+      </div>
+      <div class='col-md-7'>
+        <p>{{ about|markdown }}</p>
+      </div>
+      <div class='col-md-5'>
+        <img class='img-responsive' src='img/face.jpg' />
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div id='work' class='container'>
+    <div class='col-md-10 col-md-offset-1'>
+      <div class='head'>
+        <span id='line'></span><h2 id='header'>Work</h2><span id='line'></span>
+      </div>
+      <div class='row'>
+        <div class='col-md-4'>
+          <div class='photo freegeek'>
+            <img class='img-responsive' src="img/crimepunish.jpg" data-parent='.row' data-toggle="collapse" data-target="#crime" />
+            <div class='col-md-12'>
+              <div id="crime" class="collapse">{{ crimepunishment|markdown }}</div>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-4'>
+          <div class='photo tribune'>
+            <img class='img-responsive' src="img/underthegun.jpg" data-parent='.row' data-toggle="collapse" data-target="#gun"/>
+            <div id="gun" class="collapse">{{ underthegun|markdown }}</div>
+          </div>
+        </div>
+        <div class='col-md-4'>
+          <div class='photo bureau'>
+            <img class='img-responsive' src="img/underthegun.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-md-4'>
+          <div class='photo bureau'>
+            <img class='img-responsive' src="img/underthegun.jpg" />
+          </div>
+        </div>
+        <div class='col-md-4'>
+          <div class='photo bureau'>
+            <img class='img-responsive' src="img/underthegun.jpg" />
+          </div>
+        </div>
+        <div class='col-md-4'>
+          <div class='photo tribune'>
+            <img class='img-responsive' src="img/underthegun.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-md-4'>
+          <div class='photo class'>
+            <img class='img-responsive' src="img/underthegun.jpg" />
+          </div>
+        </div>
+        <div class='col-md-4'>
+          <div class='photo class'>
+            <img class='img-responsive' src="img/underthegun.jpg" />
+          </div>
+        </div>
+        <div class='col-md-4'>
+          <div class='photo class'>
+            <img class='img-responsive' src="img/underthegun.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div id='skills' class='container'>
+    <div class='col-md-10 col-md-offset-1'>
+      <div class='head'>
+        <span id='line'></span><h2 id='header'>Skills</h2><span id='line'></span>
+      </div>
+      <div class='col-md-3 col-md-offset-2'>
+        <h3 id='source'>Web</h3>
+        <ul>
+          <li>Content management systems</li>
+          <li>Responsive design</li>
+          <li>Analytics</li>
+          <li>Word processing and spreadsheets</li>
+        </ul>
+      </div>
+      <div class='col-md-3'>
+        <h3 id='source'>Languages</h3>
+        <ul>
+          <li>HTML and CSS</li>
+          <li>Python</li>
+          <li>JavaScript and JQuery</li>
+          <li>SQL</li>
+          <li>Java</li>
+          <li>C languages</li>
+        </ul>
+      </div>
+      <div class='col-md-3'>
+        <h3 id='source'>Design</h3>
+        <ul>
+          <li>Photoshop</li>
+          <li>Dreamweaver</li>
+          <li>Illustrator</li>
+          <li>InDesign</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div id='contact' class='container'>
+    <div class='row'>
+      <div class='col-md-4 col-md-offset-4'>
+        <div class='head'>
+          <span id='line'></span><h2 id='header'>Contact</h2><span id='line'></span>
+        </div>
+        <p>Email me! semurray3 [at] gmail [dot] com</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,134 @@
+/* NAVBAR */
+
+.navbar {
+  background-image: url('/img/Cosmos03.jpg');
+  background-repeat: repeat-x;
+  background-size: 100%;
+  /*background-color: rgba(255, 255, 255, 0);
+  color: white;*/
+}
+
+.social-menu {
+  margin-left: 10%;
+}
+
+.navbar-brand {
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 2em;
+}
+
+.navbar-default {
+  border: none;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a { 
+  color: white;
+}
+
+li.active,
+li.active:hover, 
+li.active:focus  {
+    background: #9CF;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a.active,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a {
+	text-decoration: underline;
+	background-color: rgba(255, 255, 255, 0.5); 
+  color: white;
+}
+
+/* CONTENT */
+
+p {
+  font-size: 1em !important;
+  font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
+  font-weight: 300;
+}
+
+hr {
+  margin-top: 3em;
+}
+
+#header {
+  font-size: 2em;
+  font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+#fillHeader {
+  display: block;
+  text-align: center;
+  font-family: 'Amatic SC', sans-serif;
+  color: white;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+#cursive {
+  text-align: center;
+  color: white;
+  font-family: 'Dawning of a New Day', cursive;
+  margin-bottom: 0;
+}
+
+#source {
+  font-size: 14px !important;
+  font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.index {
+  padding-top: 15%;
+}
+
+.featured-image .responsive .imgLiquid_bgSize .imgLiquid_ready {
+  margin-top: 0 !important;
+}
+
+.head {
+  position: relative;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+#skills #source {
+  margin-left: 1em;
+}
+
+#line {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 2px;
+  margin: 0 24px 6px 24px;
+  background: #8e9394;
+}
+
+/* RESPONSIVITY */
+
+@media (max-width: 767px) {
+  .social-menu li {
+    float: none;
+    display: inline-block;
+    height: 1em;
+  }
+  
+  .social-menu {
+    margin-left: 0;
+  }
+  
+  .navbar-nav>li>a {
+    padding-top: 5px;
+    padding-bottom: 5px
+  }
+}
